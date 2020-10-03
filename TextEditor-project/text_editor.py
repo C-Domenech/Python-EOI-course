@@ -28,7 +28,7 @@ def open_file():
         text.delete(1.0, 'end')
         text.insert('insert', content)
         file.close()
-        window.title(path + ' - My Text Editor')
+        window.title(path + ' - Text Editor')
     message.set('Welcome to your text editor')
 
 
@@ -40,7 +40,7 @@ def save():
         file = open(path, 'w+')
         file.write(content)
         file.close()
-        message.set('File successfully saved - Welcome to your text editor')
+        message.set('File successfully saved! - Welcome to your text editor')
     else:
         save_as()
 
@@ -56,8 +56,8 @@ def save_as():
         file = open(path, 'w+')
         file.write(content)
         file.close()
-        message.set('File successfully saved - Welcome to your text editor')
-        window.title(path + ' - My Text Editor')
+        message.set('File successfully saved! - Welcome to your text editor')
+        window.title(path + ' - Text Editor')
     else:
         message.set('Error saving file!')
         path = ''
@@ -95,7 +95,7 @@ def words_counter(event):
 
 if __name__ == '__main__':
     window = tk.Tk()
-    window.title('My Text Editor')
+    window.title('Text Editor')
     # iconbitmap could fail in some OS
     window.iconbitmap('quill-ink.ico')
 

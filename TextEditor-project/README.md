@@ -1,4 +1,4 @@
-# My Text Editor
+# Text Editor
 A minimalist text editor made using Python and Tkinter.
 
 
